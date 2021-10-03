@@ -33,3 +33,9 @@ Win: ----> Make the win square slowly moving - shouldn't be too hard to do
 Overall:
 
 Clean up code and make sections smaller
+
+
+
+**Tomorrow work**
+* Produce two loops in the main module, one loop is for the first conditional test, whereby the UI will be killed and an increased level will be returned
+* The second loop will encompass the next level, wherein the screen will be rebuilt with the increased level
