@@ -14,7 +14,7 @@ width = 700
 height = 500
 screen = py.display.set_mode((700, 500))
 pressed_keys = py.key.get_pressed()
-player_1 = Player()
+player_1 = Player()  # player object
 
 other = list()  # list to store the appended mazes which are produced by the iteration beneath
 
