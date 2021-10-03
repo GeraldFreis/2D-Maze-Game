@@ -37,8 +37,8 @@ Initialising the screen and adding the closing loop
 """
 
 
-py.init()
-py.display.set_mode((width, height))
+py.init()  # initialising the UI window
+py.display.set_mode((width, height))  # setting the display width and height
 
 
 # background = py.image.load("pixil background.png")
