@@ -34,10 +34,8 @@ class Player(py.sprite.Sprite):
         self.rect = self.surf.get_rect()
         self.player_x = self.rect.x
         self.player_y = self.rect.y
-        global level
-        self.level = level
 
-    def update(self):
+    def update(self):  # function to change the character's movement as well as level
         global width, height, level, running_test
         pressed_keys = py.key.get_pressed()
 
@@ -92,10 +90,10 @@ class Player(py.sprite.Sprite):
             # print(running_test) # test to see whether or not function is called
         return running_test
 
-    def draw(self, surface):
+    def draw(self, surface):  # function that commits the player's movement to the screen
         surface.blit(self.resize_sprite, self.rect)
 
-    def onscreen_level(self):
+    def onscreen_level(self):  # function to print the level of the character on the screen
         n = None
         text_colour = (0, 230, 230)
         bottom_left = (30, 485)
