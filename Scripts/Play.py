@@ -84,7 +84,11 @@ class Player(py.sprite.Sprite):
         # return level
 
         if pressed_keys[K_1]:
-            running_test = True
+            change_value = r.randint(0,1)  # this next section is arbitrary
+            if change_value == 0:
+                running_test = True
+            if change_value == 1:
+                running_test = False
             # print(running_test) # test to see whether or not function is called
         return running_test
 
