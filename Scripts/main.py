@@ -45,6 +45,8 @@ py.display.set_mode((width, height))
 
 finish = False  # testing value to close the loop
 running_test = False  # condition to be changed, and updated when the player wishes to increase the level
+recursive_running_test = False  # currently arbitrary
+
 
 while running_test == False:
     from Play import running_test # allows level to be updated, must be within loop, otherwise it will not continually check the condition

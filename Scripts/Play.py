@@ -15,6 +15,7 @@ screen = py.display.set_mode((700, 500))
 pressed_keys = py.key.get_pressed()
 # print(level)  # unit test to test whether or not the level is recieved
 running_test = False
+recursive_running_test = False
 
 """ 
 Creating player class 
@@ -77,16 +78,8 @@ class Player(py.sprite.Sprite):
             self.rect.x, self.player_x = 0, 0
             self.rect.y, self.player_y = 0, 0
 
-        # if pressed_keys[K_1]:  # increase level
-        #     level += 1
-        # return level
-
         if pressed_keys[K_1]:
-            change_value = r.randint(0,1)  # this next section is arbitrary
-            if change_value == 0:
-                running_test = True
-            if change_value == 1:
-                running_test = False
+            running_test = True
             # print(running_test) # test to see whether or not function is called
         return running_test
 
