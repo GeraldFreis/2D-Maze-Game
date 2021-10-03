@@ -39,3 +39,6 @@ Clean up code and make sections smaller
 **Tomorrow work**
 * Produce two loops in the main module, one loop is for the first conditional test, whereby the UI will be killed and an increased level will be returned
 * The second loop will encompass the next level, wherein the screen will be rebuilt with the increased level
+
+* Potentially use a for level increment initiated in the player module, and it can set the level possibility out of 100:
+* * If the player ends up closing the browser than the code will be broken via a break command
