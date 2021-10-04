@@ -1,5 +1,5 @@
 # 2D-Maze-Game
-his program is split into multiple components, being an attempt at overoptimising everything - whilst also overengineering everything. The program begins with a tkinter input screen, soon becoming a screen when values are inputed into the fields This returns a level value and name to a database file, which then records this information, either welcoming the character back or introducing them. The level is the number of mazes which are randomly constructed, but only 75 units away from the walls and columns Columns are automatically constructed The final point, which the user must reach is randomised between the two columns
+This program is split into multiple components, being an attempt at overoptimising everything. The program begins with a tkinter input screen, soon becoming a screen when values are inputed into the fields. This returns a level value and name to a database file, which then records this information, either welcoming the character back or introducing them. If the character has played before the name is retrieved from the player_database.db file, returning the adjacent level that the player has played (This may be made more secure with a hashmap feature later). This level then passes through the Mazes module, as it informs whether or not columns are created on the side of the screen which act as barriers to the player, but also inform the position of the opposing characters - which the player must navigate through. The level is then returned in the main module as it informs the number of mazess / barriers produced, alongside the presence of the columns at all. The player has the aim to pass through the barriers/ mazess without coming into contact with them, and then reach the winsquare. The winsquare is exactly what it sounds like - a square that must be touched to win. 
 
 This program includes elements of sqlite3, tkinter, pygame, pandas, randint and the pytz modules
 
@@ -39,3 +39,6 @@ Clean up code and make sections smaller
 **Tomorrow work**
 * Produce two loops in the main module, one loop is for the first conditional test, whereby the UI will be killed and an increased level will be returned
 * The second loop will encompass the next level, wherein the screen will be rebuilt with the increased level
+
+* Potentially use a for level increment initiated in the player module, and it can set the level possibility out of 100:
+* * If the player ends up closing the browser than the code will be broken via a break command
